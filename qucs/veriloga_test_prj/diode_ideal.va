@@ -1,0 +1,22 @@
+//diode_ideal: Ideal diode
+`include "disciplines.vams"
+
+module diode_ideal(a, c);
+	parameter real VD = 0.7;
+	inout a, c;
+	electrical a, c;
+
+	analog begin
+//		@cross events do not seem to be supported by ADMS
+//		@(cross(V(a,c), 0))
+//			;
+//		if (((V(a,c) - VD) + I(a,c))>0)
+//			V(a,c) <+ VD;
+		if ((V(a,c)+I(a,c)) > 0)
+			I(a,c) <+ V(a,c)/50;
+		else
+			I(a,c) <+ 0;
+	end
+endmodule
+
+//Last line

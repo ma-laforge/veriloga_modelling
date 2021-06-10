@@ -1,0 +1,20 @@
+//diode_shockley: Shockley diode
+`include "disciplines.vams"
+
+//`define DFLT_T 300 //[K] temperature
+//`define DFLT_VT kb*DFLT_T/abs(qe) #Diode thermal voltage
+`define DFLT_VT 0.025851999786435535
+
+module diode_shockley(a, c);
+	parameter real IS=1e-15;
+	parameter real VT=`DFLT_VT;
+	parameter real n=1.0;
+	inout a, c;
+	electrical a, c;
+
+	analog begin
+		I(a,c) <+ IS*(exp(V(a,c)/(n*VT))-1.0);
+	end
+endmodule
+
+//Last line

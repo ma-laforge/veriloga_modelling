@@ -1,0 +1,38 @@
+<Qucs Schematic 0.0.20>
+<Properties>
+  <View=0,0,800,800,1,0,0>
+  <Grid=10,10,1>
+  <DataSet=cust_vcvs.dat>
+  <DataDisplay=cust_vcvs.va>
+  <OpenDisplay=1>
+  <Script=cust_vcvs.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+  <.ID -20 44 CUST_VCVS>
+  <.PortSym -30 -30 1 0>
+  <.PortSym 30 30 4 0>
+  <Line -20 -40 40 0 #000080 2 1>
+  <Line 20 -40 0 80 #000080 2 1>
+  <Line -20 40 40 0 #000080 2 1>
+  <Line -20 -40 0 80 #000080 2 1>
+  <Line -30 -30 10 0 #000080 2 1>
+  <Line 20 30 10 0 #000080 2 1>
+  <Line -30 30 10 0 #000080 2 1>
+  <.PortSym -30 30 2 0>
+  <.PortSym 30 -30 3 0>
+  <Line 20 -30 10 0 #000080 2 1>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+</Diagrams>
+<Paintings>
+</Paintings>

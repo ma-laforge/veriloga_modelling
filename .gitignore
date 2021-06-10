@@ -1,0 +1,11 @@
+.*.swp
+
+#Data files:
+*.dat
+
+#ADMS compile:
+*.c
+*.cpp
+*.h
+*.json
+*.so

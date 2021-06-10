@@ -1,0 +1,17 @@
+//cust_vcvs: custom voltage-controlled voltage source
+`include "disciplines.vams"
+
+module cust_vcvs(p1, n1, p2, n2);
+	parameter real gain = 1;
+	inout p1, n1, p2, n2;
+	electrical p1, n1, p2, n2;
+
+	analog begin
+		@(initial_step) begin
+			//$display("HELLO_WORLD");
+		end
+		V(p2, n2) <+ V(p1, n1)*gain/-50;
+	end
+endmodule
+
+//Last line
