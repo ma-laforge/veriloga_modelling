@@ -18,12 +18,12 @@ Contains various projects to test Verilog-A modelling in the [Qucs]/[ADMS][ADMS_
 ### Installing Qucs/ADMS
 
  1. Download the most recent [release of Qucs][Qucs_Releases].
- 1. Install Qucs by following the procedure in the Github repository:
+ 1. Install Qucs by following the procedure in the Github repository:<br>
     <https://github.com/Qucs/qucs#source-download-and-compilation>
  1. Download the most recent [release of ADMS][ADMS_Releases].
- 1. Install ADMS by following the procedure in the Github repository:
+ 1. Install ADMS by following the procedure in the Github repository:<br>
     <https://github.com/Qucs/ADMS#users-install-from-tarball>
-    - NOTE: My linux distribution appears to expect `--prefix=/usr`
+    - NOTE: My own linux distribution appears to expect `--prefix=/usr`
 
 ***NOTE:*** The installation procedures on the [Qucs website][Qucs] appear to be out of date.
 
